@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import React, { useState, useEffect } from 'react';
 import { jsx, Container, Flex, Button, Text, Link } from 'theme-ui';
-//import { Link } from 'react-scroll';
+// import { Link } from 'react-router-dom';
 import { keyframes } from '@emotion/react';
 import Logo from '../Logo';
 import LogoDark from '../../assets/images/covid.png';
@@ -43,7 +43,7 @@ export default function Header({ className }) {
           {menuItems.map((menuItem, index) => (
             <Link 
               activeClass="active"
-              to={menuItem.path}
+              href={menuItem.path}
               spy={true}
               smooth={true}
               duration={500}
@@ -134,6 +134,8 @@ const styles = {
       cursor: 'pointer',
       lineHeight: '1.2',
       transition: 'all 0.15s',
+      //textDecoration: 'none',
+      //color: 'black',
       '&:hover': {
         //color: 'rgba(54, 184, 255, 1)',
         textDecoration: '1px solid black underline'

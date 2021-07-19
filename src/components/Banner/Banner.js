@@ -22,19 +22,12 @@ export default function Banner() {
             <Button sx={{ textTransform: 'uppercase', fontSize: '14px !important' }} variant="primary">Start Posting</Button>
           </Link>
         </Box>
-
-        {/*<Box sx={styles.banner.imageBox}>
-          <Image sx={styles.img} src={BannerImg} alt="banner" />
-        </Box>*/}
       </Container>
     </section>
   );
 };
 
 const styles = {
-  /*img: {
-    clipPath: 'polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%)'
-  },*/
   secondaryHeading: {
     paddingLeft: '0px !important'
   },
@@ -45,7 +38,6 @@ const styles = {
     zIndex: 2,
     backgroundImage: `url(${BannerImg})`,
     backgroundRepeat: 'no-repeat',
-    //backgroundPosition: 'center',
     backgroundSize: 'cover',
     height: '100%',
     /*'&::before': {

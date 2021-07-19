@@ -11,6 +11,10 @@ import PostForm from './components/PostForm/PostForm';
 import Layout from './components/Layout';
 import Header from './components/Header/Header'
 
+
+// Pages
+import About from './pages/about';
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -20,6 +24,7 @@ const App = () => {
             <Route path="/" exact component={Home} />
             <Route path="/auth" exact component={Auth} />
             <Route path="/posts/new-post" exact component={PostForm} />
+            <Route path="/about" exact component={About} />
           </Layout>
         </ThemeProvider>
       </Switch>

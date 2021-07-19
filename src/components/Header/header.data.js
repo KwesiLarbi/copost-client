@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default [
   {
-    path: '/',
+    path: '/about',
     label: 'About',
   },
   {
