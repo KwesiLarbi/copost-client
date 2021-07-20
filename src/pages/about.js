@@ -4,6 +4,7 @@ import React from 'react';
 import { jsx } from 'theme-ui';
 
 export default function AboutPage() {
+  // Add new footer for about page
   return (
     <div>
       <div sx={{ 
