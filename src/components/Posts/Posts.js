@@ -1,6 +1,7 @@
 /** @jsxRuntime classic
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
+import React from 'react';
 import { Container, Grid } from 'theme-ui';
 import { CircularProgress } from '@material-ui/core';
 import { useSelector } from 'react-redux';

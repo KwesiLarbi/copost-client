@@ -95,7 +95,7 @@ export default function NewYorkTimes() {
                           lineHeight: '20px' 
                           }}
                         >
-                          {article.title}
+                          {article.main}
                         </h2>
                       </Link>
                     </div>
@@ -107,7 +107,7 @@ export default function NewYorkTimes() {
                     lineHeight: '20px'
                     }}
                   >
-                    Published Date - {article.published_date}
+                    Published Date - {article.pub_date}
                   </Text>
                 </Box>
               ))}

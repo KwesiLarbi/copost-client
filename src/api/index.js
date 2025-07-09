@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://copost-server.herokuapp.com/' });
-const COVID_API = process.env.REACT_APP_COVID_API;
+// const API = axios.create({ baseURL: 'https://copost-server.herokuapp.com/' }) || 'http://localhost:5000';
+const API = axios.create({ baseURL: 'http://localhost:5000' })
+const COVID_API = process.env.REACT_APP_COVID_API || '';
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {

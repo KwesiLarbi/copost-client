@@ -1,5 +1,4 @@
-/** @jsxRuntime classic
-/** @jsx jsx */
+import React from 'react';
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Button, Image } from 'theme-ui';
 import { Link } from 'react-scroll';
